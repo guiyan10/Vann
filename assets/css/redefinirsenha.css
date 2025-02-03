@@ -1,0 +1,98 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body{
+            background-color: #fff9c9;
+            background: linear-gradient(to right, #e2e2e2, #e9be11bb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            position: relative;
+            overflow: hidden;
+            width: 400px;
+            max-width: 100%;
+            min-height: 500px;
+        }
+
+        .container form{
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 40px;
+            height: 100%;
+        }
+
+        .container img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .container span{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            margin: 20px 0;
+        }
+
+        .container input{
+            background-color: #eee;
+            border: none;
+            margin: 8px 0;
+            padding: 10px 15px;
+            font-size: 13px;
+            border-radius: 8px;
+            width: 81%;
+            outline: none;
+            height: 42px;
+        }
+
+        .container button{
+            background-color: #e9bd11;
+            color: #fff;
+            font-size: 14px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .container a{
+            color: #333;
+            font-size: 13px;
+            text-decoration: none;
+            margin: 15px 0 10px;
+        }
+
+        .bi{
+            margin-top: 5%;
+            margin-left: 6%;
+            color: #00000073;
+        }
+        .password-field {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            align-items: baseline;
+        }

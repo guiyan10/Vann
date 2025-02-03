@@ -1,0 +1,93 @@
+.register-form {
+    text-align: center;
+}
+
+.register-form .logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    outline: none;
+    appearance: none;
+}
+
+.input-group select {
+    padding-left: 40px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff5e62;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff9966;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ff5e62;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: #ff5e62;
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .input-group input, .input-group select {
+        font-size: 13px;
+        padding: 12px 15px 12px 40px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

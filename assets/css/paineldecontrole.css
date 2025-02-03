@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+.logo {
+    width: 30%;
+}
+.user-dropdown {
+    position: absolute;
+    top: 60px;
+    /* Adjust the dropdown position as needed */
+    right: 20px;
+    /* Adjust the dropdown position as needed */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.user-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.user-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.user-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #fff;
+    /* Definindo a cor do ícone como branca */
+}
+
+.user-icon:hover {
+    color: #ddd;
+    /* Mudando a cor do ícone ao passar o mouse */
+}

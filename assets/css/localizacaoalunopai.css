@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    height: 50px;
+    background-color: #FFC84E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+    height: 60px;
+}
+
+.logo {
+    width: 30%;
+}
+
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+.user-icon:hover {
+    color: #ddd;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.user-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.user-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.user-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.informacoesviagem {
+    display: block;
+    margin-bottom: 5px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    height: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.459);
+}
+
+input {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.input-with-icon {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input {
+    padding-left: 30px;
+}
+
+.input-with-icon i {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.input-with-icon .inicio i {
+    margin-left: 10px;
+}
+
+.input-with-icon .final i {
+    margin: 10px;
+}
+
+.input-with-icon .caminho i {
+    margin-left: 10px;
+}
+
+.map-container {
+    width: 90%;
+    height: 89%;
+    margin-right: 20px;
+}
+
+h2 {
+    text-align: start;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.denuncia {
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.denuncia:hover {
+    background-color: rgba(255, 0, 0, 0.767);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.user-dropdown.show {
+    display: block;
+}
+
+.input-with-icon input {
+    padding-left: 40px;
+    flex: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#denunciaForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.modal-content label {
+    display: block;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: inherit;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.inputDescricao {
+    height: 40px;
+    width: 100%;
+    text-align: inherit;
+    padding: 10px;
+}
+
+.buttonDiv {
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsiveness */
+
+@media (max-width: 987px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .informacoesviagem {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .map-container {
+        position: relative;
+        outline-style: none;
+        width: 90%;
+        height: 359px;
+        margin-left: 18px;
+    
+    }
+
+    .user-dropdown {
+        top: 50px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+    }
+
+    .logo {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .user-icon {
+        font-size: 20px;
+    }
+
+    .user-dropdown {
+        top: 70px;
+    }
+
+    .informacoesviagem {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 250px;
+    }
+}

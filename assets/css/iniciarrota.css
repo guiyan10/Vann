@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #FFC84E;
+    color: #000;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 1px #80808038;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aluno-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aluno-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aluno-info p {
+    margin: 10px 0;
+}
+
+.status {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Entregue {
+    color: green;
+}
+
+.Em-andamento {
+    color: orange;
+}
+
+
+
+/* Ajustes gerais */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Espaçamento entre os botões */
+   
+}
+
+/* Botões */
+.btn-rota,
+.btn-status,
+.btn-iniciar,
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-rota {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-rota:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.btn-status {
+    background-color: #e5b75a;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-status:hover {
+    background-color: #cba14a;
+    transform: translateY(-3px);
+}
+
+.btn-iniciar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-iniciar:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Botão no formulário */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Estilização do filtro */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+form select,
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="text"] {
+    width: 200px;
+}
+
+label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 738px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        gap: 5px;
+        flex-direction: column;
+    }
+    form input[type="text"]{
+        width: 100%;
+    }
+    form input,
+    form select {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-iniciar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .aluno-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .aluno-card {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .aluno-info p {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}

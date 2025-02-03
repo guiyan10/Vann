@@ -46,7 +46,7 @@ Antes de iniciar, certifique-se de ter instalado:
 
 ### 🔹 Passos para Execução
 1. **Clone o repositório:**
-   ```bash
+   `git clone https://github.com/seu-usuario/vann.git``bash
 📍 git clone https://github.com/seu-usuario/vann.git
 📍 cd vann
 📍 npm install

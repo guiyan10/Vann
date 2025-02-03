@@ -24,7 +24,7 @@ A **Vann** é uma API robusta para geolocalização em tempo real, desenvolvida 
 ### 🔹 Outros
 - **Socket.IO** - Comunicação em tempo real
 - **Google Maps API** - Geolocalização
-- **Docker** *(se houver)* - Containerização
+- **api do arcgis ** - Geolocalização
 
 ---
 
@@ -43,7 +43,7 @@ A **Vann** é uma API robusta para geolocalização em tempo real, desenvolvida 
 Antes de iniciar, certifique-se de ter instalado:
 - [Node.js](https://nodejs.org/) e npm
 - Banco de dados configurado (**MongoDB** ou **MySQL**)
-
+- Para rodar localmente, certifica-se de ter instalado o **XAMP** ou **Laragon**
 
 ### 🔹 Passos para Execução
 1. **Clone o repositório:**

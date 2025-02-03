@@ -43,25 +43,19 @@ A **Vann** é uma API robusta para geolocalização em tempo real, desenvolvida 
 Antes de iniciar, certifique-se de ter instalado:
 - [Node.js](https://nodejs.org/) e npm
 - Banco de dados configurado (**MongoDB** ou **MySQL**)
-- Chave de API do Google Maps
-- Docker *(opcional)*
+
 
 ### 🔹 Passos para Execução
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/vann.git
+   git clone https://github.com/guiyan10/vann.git
    cd vann
    ```
 2. **Instale as dependências:**
    ```bash
    npm install
    ```
-3. **Configure as variáveis de ambiente:**
-   ```bash
-   export DB_URL=mongodb://localhost:27017/vann
-   export GOOGLE_MAPS_API_KEY=SUA_CHAVE_AQUI
-   export PORT=3000
-   ```
+
 4. **Inicie o servidor:**
    ```bash
    npm start

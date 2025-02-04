@@ -24,7 +24,7 @@ A **Vann** é uma API robusta para geolocalização em tempo real, desenvolvida 
 ### 🔹 Outros
 - **Socket.IO** - Comunicação em tempo real
 - **Google Maps API** - Geolocalização
-- ** API do arcgis** - Geolocalização
+- **API do arcgis** - Geolocalização
 
 ---
 
